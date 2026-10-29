@@ -26,10 +26,10 @@ O modelo roda **direto no navegador**, sem servidor, e é **retreinado toda sema
 
 ## 📊 Resultados
 
-Números do treino atual (ficam sempre atualizados em [`metrics.json`](metrics.json) e no site):
+Números do primeiro treino. A versão sempre atualizada fica em [`metrics.json`](metrics.json) e no [site](https://yagoxavier10.github.io/classificador-manchetes/):
 
-- **~2.300 manchetes** reais coletadas do Google News
-- **95% de acerto** em manchetes separadas para teste (20% que o modelo nunca viu no treino)
+- **Milhares de manchetes** reais coletadas do Google News, e o dataset cresce toda semana
+- **~95% de acerto** em manchetes separadas para teste (20% que o modelo nunca viu no treino)
 - Tema mais fácil: **Motores** (99%) · mais difícil: **Tecnologia** (88%), que se mistura com IA e Fintechs
 
 > Os rótulos vêm da própria busca: uma notícia achada buscando "Selic OR Copom" vira "Economia".
