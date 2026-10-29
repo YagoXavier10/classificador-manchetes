@@ -1,0 +1,261 @@
+{
+  "trained_at": "2026-10-29T02:47:38+00:00",
+  "n_headlines": 2296,
+  "n_train": 1836,
+  "n_test": 460,
+  "vocab_size": 3932,
+  "accuracy": 0.9522,
+  "per_topic": {
+    "Ciência de Dados": {
+      "f1": 0.969,
+      "n": 33
+    },
+    "Economia": {
+      "f1": 0.974,
+      "n": 57
+    },
+    "Fintechs": {
+      "f1": 0.974,
+      "n": 57
+    },
+    "Futebol": {
+      "f1": 0.973,
+      "n": 56
+    },
+    "Inteligência Artificial": {
+      "f1": 0.925,
+      "n": 54
+    },
+    "Jiu-Jitsu": {
+      "f1": 0.952,
+      "n": 44
+    },
+    "Motores": {
+      "f1": 0.991,
+      "n": 54
+    },
+    "Política": {
+      "f1": 0.926,
+      "n": 59
+    },
+    "Tecnologia": {
+      "f1": 0.884,
+      "n": 46
+    }
+  },
+  "per_topic_total": {
+    "Ciência de Dados": 163,
+    "Economia": 286,
+    "Fintechs": 284,
+    "Futebol": 278,
+    "Inteligência Artificial": 269,
+    "Jiu-Jitsu": 219,
+    "Motores": 270,
+    "Política": 295,
+    "Tecnologia": 232
+  },
+  "labels": [
+    "Ciência de Dados",
+    "Economia",
+    "Fintechs",
+    "Futebol",
+    "Inteligência Artificial",
+    "Jiu-Jitsu",
+    "Motores",
+    "Política",
+    "Tecnologia"
+  ],
+  "confusion": [
+    [
+      31,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      56,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      56,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      55,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      49,
+      0,
+      0,
+      2,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      40,
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      53,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      56,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      2,
+      0,
+      0,
+      0,
+      42
+    ]
+  ],
+  "top_words": {
+    "Ciência de Dados": [
+      "dados",
+      "big",
+      "analise",
+      "data",
+      "ciencia",
+      "real",
+      "time",
+      "pesquisa"
+    ],
+    "Economia": [
+      "inflacao",
+      "pib",
+      "bolsa",
+      "ibovespa",
+      "dolar",
+      "ipca",
+      "selic",
+      "lula"
+    ],
+    "Fintechs": [
+      "pix",
+      "bitcoin",
+      "fintechs",
+      "fintech",
+      "nubank",
+      "criptomoeda",
+      "bc",
+      "mil"
+    ],
+    "Futebol": [
+      "flamengo",
+      "palmeiras",
+      "libertadores",
+      "corinthians",
+      "brasileirao",
+      "selecao",
+      "copa",
+      "feminina"
+    ],
+    "Inteligência Artificial": [
+      "ia",
+      "openai",
+      "anthropic",
+      "chatgpt",
+      "inteligencia",
+      "artificial",
+      "modelo",
+      "generativa"
+    ],
+    "Jiu-Jitsu": [
+      "ufc",
+      "luta",
+      "jiu",
+      "jitsu",
+      "mma",
+      "faixa",
+      "preta",
+      "silva"
+    ],
+    "Motores": [
+      "f1",
+      "lancamento",
+      "stock",
+      "car",
+      "verstappen",
+      "carros",
+      "gp",
+      "carro"
+    ],
+    "Política": [
+      "stf",
+      "eleicoes",
+      "senado",
+      "governador",
+      "ministro",
+      "turno",
+      "congresso",
+      "projeto"
+    ],
+    "Tecnologia": [
+      "internet",
+      "celular",
+      "apple",
+      "5g",
+      "google",
+      "samsung",
+      "software",
+      "tecnologia"
+    ]
+  }
+}

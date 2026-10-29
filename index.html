@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Classificador de Manchetes · IA</title>
+  <meta name="description" content="Modelo de machine learning que descobre o tema de uma manchete, rodando direto no navegador.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="net" aria-hidden="true"></canvas>
+
+  <header class="hero">
+    <p class="eyebrow">🤖 Machine learning no navegador</p>
+    <h1>Classificador de <span class="grad">Manchetes</span></h1>
+    <p class="lead">Digite uma manchete de notícia e o modelo descobre o tema na hora. Ele foi treinado com milhares de notícias reais
+      e é retreinado toda semana, sozinho, pelo GitHub Actions.</p>
+  </header>
+
+  <main>
+    <section class="card try">
+      <label for="headline" class="label">Manchete</label>
+      <div class="input-row">
+        <textarea id="headline" rows="2" placeholder="Ex.: Banco Central mantém a Selic em 15% ao ano"></textarea>
+      </div>
+      <div class="chips" id="examples"></div>
+      <div id="result" class="result" aria-live="polite">
+        <p class="muted">Carregando o modelo…</p>
+      </div>
+      <div id="why" class="why"></div>
+    </section>
+
+    <section class="stats" id="stats"></section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Acerto por tema</h2>
+        <p class="muted">F1-score em manchetes que o modelo nunca viu (20% separadas para teste)</p>
+        <div id="f1"></div>
+      </div>
+      <div class="card">
+        <h2>Palavras que mais pesam</h2>
+        <p class="muted">As palavras que mais puxam o modelo para cada tema</p>
+        <div id="words"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Matriz de confusão</h2>
+      <p class="muted">Linhas: tema real · Colunas: tema previsto. A diagonal são os acertos.</p>
+      <div class="cm-wrap"><table id="cm" class="cm"></table></div>
+    </section>
+
+    <section class="card how">
+      <h2>Como funciona</h2>
+      <ol class="steps">
+        <li><b>Coleta</b><span>Um script em Python busca manchetes no Google News para 9 temas. A própria busca vira o rótulo de cada notícia.</span></li>
+        <li><b>Texto → números</b><span>Cada manchete vira um vetor <abbr title="Term Frequency–Inverse Document Frequency">TF-IDF</abbr> com palavras e pares de palavras.</span></li>
+        <li><b>Treino</b><span>Uma Regressão Logística (scikit-learn) aprende o peso de cada palavra para cada tema.</span></li>
+        <li><b>No navegador</b><span>Os pesos são exportados em JSON e este site refaz a conta em JavaScript, sem servidor.</span></li>
+        <li><b>Toda semana</b><span>O GitHub Actions coleta notícias novas, retreina e publica o modelo atualizado.</span></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    Feito por <a href="https://github.com/YagoXavier10">Yago dos Santos</a> ·
+    <a href="https://github.com/YagoXavier10/classificador-manchetes">código no GitHub</a> ·
+    <span id="trained"></span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
