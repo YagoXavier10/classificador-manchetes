@@ -1,58 +1,58 @@
 {
-  "trained_at": "2026-11-16T19:12:31+00:00",
-  "n_headlines": 7145,
-  "n_train": 5716,
-  "n_test": 1429,
+  "trained_at": "2026-11-23T20:50:21+00:00",
+  "n_headlines": 8523,
+  "n_train": 6818,
+  "n_test": 1705,
   "vocab_size": 6000,
-  "accuracy": 0.9657,
+  "accuracy": 0.9654,
   "per_topic": {
     "Ciência de Dados": {
-      "f1": 0.972,
-      "n": 55
+      "f1": 0.951,
+      "n": 62
     },
     "Economia": {
-      "f1": 0.964,
-      "n": 199
+      "f1": 0.985,
+      "n": 234
     },
     "Fintechs": {
-      "f1": 0.968,
-      "n": 175
+      "f1": 0.965,
+      "n": 212
     },
     "Futebol": {
-      "f1": 0.982,
-      "n": 191
+      "f1": 0.975,
+      "n": 234
     },
     "Inteligência Artificial": {
-      "f1": 0.965,
-      "n": 183
+      "f1": 0.962,
+      "n": 222
     },
     "Jiu-Jitsu": {
-      "f1": 0.967,
-      "n": 156
+      "f1": 0.975,
+      "n": 186
     },
     "Motores": {
-      "f1": 0.979,
-      "n": 140
+      "f1": 0.966,
+      "n": 165
     },
     "Política": {
-      "f1": 0.944,
-      "n": 197
+      "f1": 0.957,
+      "n": 237
     },
     "Tecnologia": {
-      "f1": 0.958,
-      "n": 133
+      "f1": 0.932,
+      "n": 153
     }
   },
   "per_topic_total": {
-    "Ciência de Dados": 274,
-    "Economia": 995,
-    "Fintechs": 877,
-    "Futebol": 953,
-    "Inteligência Artificial": 917,
-    "Jiu-Jitsu": 779,
-    "Motores": 700,
-    "Política": 984,
-    "Tecnologia": 666
+    "Ciência de Dados": 311,
+    "Economia": 1170,
+    "Fintechs": 1058,
+    "Futebol": 1172,
+    "Inteligência Artificial": 1108,
+    "Jiu-Jitsu": 932,
+    "Motores": 823,
+    "Política": 1183,
+    "Tecnologia": 766
   },
   "labels": [
     "Ciência de Dados",
@@ -67,115 +67,115 @@
   ],
   "confusion": [
     [
-      53,
+      58,
+      0,
+      0,
       0,
       0,
       0,
       1,
+      2,
+      1
+    ],
+    [
       0,
-      0,
+      231,
       1,
+      0,
+      0,
+      0,
+      0,
+      2,
       0
     ],
     [
       1,
-      190,
+      2,
+      204,
+      1,
+      2,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      232,
+      0,
       0,
       0,
       2,
+      0
+    ],
+    [
+      0,
+      2,
+      1,
+      0,
+      215,
+      0,
+      0,
+      1,
+      3
+    ],
+    [
+      0,
       0,
       0,
       6,
-      0
-    ],
-    [
       0,
-      2,
-      166,
-      1,
-      3,
-      0,
-      1,
-      2,
-      0
-    ],
-    [
-      0,
-      0,
-      0,
-      189,
-      0,
-      1,
-      0,
-      1,
-      0
-    ],
-    [
-      0,
-      0,
-      1,
-      0,
-      179,
-      0,
-      1,
-      1,
-      1
-    ],
-    [
-      0,
-      0,
-      0,
-      4,
-      0,
-      147,
-      0,
-      5,
-      0
-    ],
-    [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      138,
-      1,
-      1
-    ],
-    [
-      0,
-      2,
-      0,
-      0,
-      0,
-      0,
-      1,
-      193,
-      1
-    ],
-    [
-      0,
-      1,
-      1,
+      177,
       0,
       3,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      2,
+      0,
+      0,
+      158,
+      3,
+      0
+    ],
+    [
+      1,
+      0,
+      2,
+      1,
+      0,
+      0,
+      0,
+      233,
+      0
+    ],
+    [
+      0,
       0,
       1,
-      2,
-      125
+      0,
+      8,
+      0,
+      3,
+      3,
+      138
     ]
   ],
   "top_words": {
     "Ciência de Dados": [
       "dados",
-      "analise",
       "big",
+      "analise",
+      "pesquisa",
       "cursos",
       "data",
       "abertos",
-      "ciencia",
-      "votos"
+      "azul"
     ],
     "Economia": [
       "pib",
@@ -184,7 +184,7 @@
       "dolar",
       "selic",
       "ibovespa",
-      "ipca",
+      "desemprego",
       "copom"
     ],
     "Fintechs": [
@@ -193,14 +193,14 @@
       "nubank",
       "fintech",
       "fintechs",
+      "criptomoeda",
       "criptomoedas",
-      "banco",
-      "revolut"
+      "banco"
     ],
     "Futebol": [
       "flamengo",
-      "palmeiras",
       "libertadores",
+      "palmeiras",
       "corinthians",
       "brasileirao",
       "selecao",
@@ -209,8 +209,8 @@
     ],
     "Inteligência Artificial": [
       "anthropic",
-      "openai",
       "ia",
+      "openai",
       "chatgpt",
       "inteligencia",
       "artificial",
@@ -218,11 +218,11 @@
       "modelo"
     ],
     "Jiu-Jitsu": [
-      "ufc",
       "luta",
+      "ufc",
       "jiu",
-      "jitsu",
       "mma",
+      "jitsu",
       "faixa",
       "preta",
       "lutador"
@@ -231,20 +231,20 @@
       "f1",
       "formula",
       "lancamento",
-      "stock",
-      "car",
-      "gp",
       "verstappen",
-      "carro"
+      "car",
+      "stock",
+      "gp",
+      "carros"
     ],
     "Política": [
       "stf",
       "eleicoes",
       "governador",
-      "senado",
       "ministro",
-      "congresso",
+      "senado",
       "camara",
+      "congresso",
       "partido"
     ],
     "Tecnologia": [
@@ -252,8 +252,8 @@
       "5g",
       "software",
       "celular",
-      "google",
       "apple",
+      "google",
       "samsung",
       "tecnologia"
     ]
